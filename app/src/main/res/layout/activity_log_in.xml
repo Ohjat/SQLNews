@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity">
+
+    <EditText
+        android:id="@+id/txtLogin"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="80sp"
+        android:gravity="left"
+        android:hint="Логин"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40sp"
+        android:gravity="left"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtLogin" />
+
+    <CheckBox
+        android:id="@+id/showPassword"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15sp"
+        android:text="Показывать пароль"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtPassword" />
+
+    <Button
+        android:id="@+id/btnEnter"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:onClick="enterClick"
+        android:text="Войти"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:text="Регистрация"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnEnter"
+        android:layout_marginTop="30sp"
+        android:onClick="registrationClick"
+        android:id="@+id/btnRegistration"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

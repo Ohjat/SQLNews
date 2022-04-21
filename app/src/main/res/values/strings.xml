@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SQLightNews</string>
+
+    <string-array name="roles">
+        <item>Читатель</item>
+        <item>Администратор</item>
+    </string-array>
+</resources>
